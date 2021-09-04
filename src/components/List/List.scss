@@ -4,6 +4,7 @@
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
+    font-size: 15px;
     &:before {
         content: "";
         width: 0; 
@@ -24,6 +25,7 @@
     }
     .children {
         padding-left: 20px;
+        font-size: 13px;
     }
     .childList {
         padding: 10px;

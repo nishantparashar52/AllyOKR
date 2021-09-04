@@ -1,2 +1,3 @@
-# npm install
-# npm start
+AllyOKR assigment
+## Please do npm install
+## npm start
