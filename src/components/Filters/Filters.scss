@@ -1,0 +1,14 @@
+.filters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    padding: 16px;
+}
+.filterList {
+    border-radius: 40px;
+    padding: 8px 12px;
+    background-color: #cacaca;
+    color: #fff
+}
