@@ -14,15 +14,15 @@ export default () => {
 
     useEffect(() => {
         dispatch(fetchData());
-    }, []);
+    }, [dispatch]);
 
     useEffect(() => {
         if(userData && userData.length > 0) setData(userData);
     }, [userData]);
 
     const getFilters = filterName => {
-        const targetValue = filterName.target.dataset.value;
-        setData(filterData[targetValue]);
+        const targetValue = filterName.target.parentNode.dataset.value;
+        if(targetValue) setData(filterData[targetValue]);
     }
 
     const toggleData = e => {
@@ -39,8 +39,8 @@ export default () => {
     return (
     <div>
         {loading ?
-        <svg class="svgLoader" viewBox="0 0 1024 1024" width="10em" height="10em">
-            <path fill="lightblue" d="PATH FOR THE LOADER ICON" />
+        <svg className="svgLoader" viewBox="0 0 1024 1024" width="10em" height="10em">
+            <path fill="lightblue" />
         </svg> :
         <>
             {filterData && Object.keys(filterData).length > 0 &&

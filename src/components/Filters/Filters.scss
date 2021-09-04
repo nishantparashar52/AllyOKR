@@ -5,10 +5,20 @@
     margin-bottom: 30px;
     cursor: pointer;
     padding: 16px;
+    .filterLabel {
+        padding: 8px;
+        border-radius: 4px;
+    }
 }
 .filterList {
     border-radius: 40px;
     padding: 8px 12px;
     background-color: #cacaca;
     color: #fff
+}
+.filterRadio {
+    display: none;
+    &:checked + label {
+        background-color: #f1f1f1;
+    }
 }
